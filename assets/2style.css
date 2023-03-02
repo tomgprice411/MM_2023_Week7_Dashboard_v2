@@ -1,0 +1,212 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+
+
+:root {
+    --background-color: #F8F9F9;
+    --font-color: #424949;
+    --byd-auto-color: rgb(250, 97, 97); 
+    --volkswagen-color: rgb(8, 247, 8);
+    --gac-motor-color: rgb(250, 173, 97);
+    --tesla-color: rgb(173, 97, 250); 
+    --wuling-color: rgb(7, 223, 223);
+    --others-color: rgb(99, 110, 250);
+    --text-size: 18px;
+    --radio-text-size: 20px;
+  }
+
+body {
+    background-color: var(--background-color);
+}
+#header {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 2rem 0;
+}
+
+h1 {
+    color: var(--font-color);
+    font-family: "Merriweather", "sans";
+    font-weight: 600;
+}
+
+p {
+    display: flex;
+    padding-right: 1rem;
+    align-items: center;
+    margin:0;
+    font-size: var(--text-size);
+}
+
+  input[type="radio"]{
+    visibility: hidden;
+    height: 0;
+    width: 0;
+  }
+
+  .radio-row {
+    margin-bottom: 2rem;
+    margin-top: 0.5rem;
+  }
+
+  .car-brand-label-checked {
+    color: var(--background-color);
+    background-color: #dde5e5;
+  }
+
+  #radio-label-byd-auto {
+    color: var(--byd-auto-color);
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    border: 1px solid var(--byd-auto-color);
+    border-radius: 5px;
+    text-align: center;
+    font-size: var(--radio-text-size);
+  }
+
+ 
+  #radio-label-byd-auto:hover {
+    color: var(--background-color);
+    background-color: var(--byd-auto-color);
+    /* display: flex;
+    align-items: center; */
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    border: 1px solid var(--byd-auto-color);
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  #radio-label-volkswagen {
+    color: var(--volkswagen-color);
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    border: 1px solid var(--volkswagen-color);
+    border-radius: 5px;
+    text-align: center;
+    font-size: var(--radio-text-size);
+    /* height: 4rem;
+    width: 8rem; */
+  }
+
+  #radio-label-volkswagen:hover {
+    color: var(--background-color);
+    background-color: var(--volkswagen-color);
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    border: 1px solid var(--volkswagen-color);
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  #radio-label-gac-motor {
+    color: var(--gac-motor-color);
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    border: 1px solid var(--gac-motor-color);
+    border-radius: 5px;
+    text-align: center;
+    font-size: var(--radio-text-size);
+  }
+
+  #radio-label-gac-motor:hover {
+    color: var(--background-color);
+    background-color: var(--gac-motor-color);
+    /* display: inline; */
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    border: 1px solid var(--gac-motor-color);
+    border-radius: 5px;
+    text-align: center;
+  }
+
+
+  #radio-label-tesla {
+    color: var(--tesla-color);
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    border: 1px solid var(--tesla-color);
+    border-radius: 5px;
+    text-align: center;
+    font-size: var(--radio-text-size);
+  }
+
+  #radio-label-tesla:hover {
+    color: var(--background-color);
+    background-color: var(--tesla-color);
+    /* display: inline; */
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    border: 1px solid var(--tesla-color);
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  #radio-label-wuling {
+    color: var(--wuling-color); 
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    border: 1px solid var(--wuling-color); 
+    border-radius: 5px;
+    text-align: center;
+    font-size: var(--radio-text-size);
+  }
+
+  #radio-label-wuling:hover {
+    color: var(--background-color);
+    background-color: var(--wuling-color); 
+    /* display: inline; */
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    border: 1px solid var(--wuling-color); 
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  #radio-label-others {
+    color: var(--others-color); 
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    border: 1px solid var(--others-color);
+    border-radius: 5px;
+    text-align: center;
+    font-size: var(--radio-text-size);
+  }
+
+  #radio-label-others:hover {
+    color: var(--background-color);
+    background-color: var(--others-color); 
+    /* display: inline; */
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-right: 1.5rem;
+    cursor: pointer;
+    border: 1px solid var(--others-color);
+    border-radius: 5px;
+    text-align: center;
+  }
