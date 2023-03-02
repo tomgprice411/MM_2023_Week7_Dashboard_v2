@@ -138,24 +138,28 @@ def create_layout(car_brand):
                         xgap = 3,
                         ygap = 3, 
                         colorscale = colours,
+                        hoverinfo = 'none',
                         showscale = False), row = 1, col = 1)
     
     fig.add_trace(go.Heatmap(z=data_q1_2022,
                         xgap = 3,
                         ygap = 3, 
                         colorscale = colours,
+                        hoverinfo = 'none',
                         showscale = False), row = 1, col = 2)
 
     fig.add_trace(go.Heatmap(z=data_q2_2022,
                         xgap = 3,
                         ygap = 3, 
                         colorscale = colours,
+                        hoverinfo = 'none',
                         showscale = False), row = 1, col = 3)
 
     fig.add_trace(go.Heatmap(z=data_q3_2022,
                         xgap = 3,
                         ygap = 3, 
                         colorscale = colours,
+                        hoverinfo = 'none',
                         showscale = False), row = 1, col = 4)
 
     fig.update_layout(plot_bgcolor = PLOT_BGCOLOUR,
